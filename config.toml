@@ -1,0 +1,247 @@
+baseURL = "https://yourusername.github.io/yourrepo/"
+languageCode = "en-us"
+title = "Dr. Portfolio"
+theme = "single-page-portfolio"
+
+[params]
+  # Hero Section
+  [params.hero]
+    name = "Dr. Your Name"
+    tagline = "Dental Specialist"
+    graduation = "Graduated 2020 - Faculty of Dentistry"
+    profile_image = "profile.jpg"  # Will be uploaded via GitHub issues
+    
+    [params.hero.current_position]
+      role = "Dental Specialist"
+      clinic = "Your Clinic Name"
+
+  # Skills Section
+  [params.skills]
+    clinical = [
+      "Oral Diagnosis & Treatment Planning",
+      "Preventive Dentistry",
+      "Restorative Dentistry (Fillings, Crowns, Bridges)",
+      "Endodontics (Root Canal Treatment)",
+      "Prosthodontics (Dentures & Implants)",
+      "Oral Surgery (Extractions)",
+      "Pediatric Dentistry",
+      "Periodontics (Gum Treatment)",
+      "Orthodontics Basics"
+    ]
+    
+    digital = [
+      "Digital Radiography (X-rays)",
+      "CAD/CAM Dentistry",
+      "Digital Smile Design",
+      "Dental Software (Management Systems)",
+      "3D Printing Applications"
+    ]
+    
+    soft = [
+      "Patient Communication",
+      "Empathy & Compassion",
+      "Team Collaboration",
+      "Time Management",
+      "Problem Solving",
+      "Attention to Detail"
+    ]
+
+  # Education Section
+  [params.education]
+    university = "University Name - Faculty of Dentistry"
+    graduation_year = "2020"
+    
+    [params.education.master]
+      obtained = false
+      title = "Master in Oral Medicine"
+      year = "2024"
+    
+    [params.education.phd]
+      obtained = false
+      title = "PhD in Dental Sciences"
+      year = "2028"
+    
+    [[params.education.timeline]]
+      year = "2020"
+      event = "Graduated from Faculty of Dentistry"
+    
+    [[params.education.timeline]]
+      year = "2021"
+      event = "Started General Practice"
+    
+    [[params.education.timeline]]
+      year = "2023"
+      event = "Specialized Training Program"
+    
+    [[params.education.timeline]]
+      year = "2024"
+      event = "Current Position"
+    
+    # Certificates (images will be uploaded via GitHub issues)
+    [[params.education.certificates]]
+      title = "Advanced Endodontics Course"
+      image = "cert1.jpg"
+    
+    [[params.education.certificates]]
+      title = "Digital Dentistry Workshop"
+      image = "cert2.jpg"
+    
+    [[params.education.certificates]]
+      title = "Implantology Certification"
+      image = "cert3.jpg"
+
+  # Clinical Cases Section
+  [[params.clinical_cases]]
+    enabled = true
+    category = "Cosmetic Dentistry"
+    
+    [[params.clinical_cases.cases]]
+      before = "case1-before.jpg"
+      after = "case1-after.jpg"
+      description = "Smile makeover with veneers"
+    
+    [[params.clinical_cases.cases]]
+      before = "case2-before.jpg"
+      after = "case2-after.jpg"
+      description = "Teeth whitening treatment"
+
+  [[params.clinical_cases]]
+    enabled = true
+    category = "Restorative Dentistry"
+    
+    [[params.clinical_cases.cases]]
+      before = "case3-before.jpg"
+      after = "case3-after.jpg"
+      description = "Crown and bridge restoration"
+    
+    [[params.clinical_cases.cases]]
+      before = "case4-before.jpg"
+      after = "case4-after.jpg"
+      description = "Full mouth rehabilitation"
+
+  [[params.clinical_cases]]
+    enabled = true
+    category = "Orthodontics"
+    
+    [[params.clinical_cases.cases]]
+      before = "case5-before.jpg"
+      after = "case5-after.jpg"
+      description = "Clear aligner treatment"
+
+  # Contact Section
+  [params.contact]
+    phone = "+20 123 456 7890"
+    whatsapp = "+20 123 456 7890"
+    email = "doctor@example.com"
+    instagram = "https://instagram.com/yourhandle"
+    facebook = "https://facebook.com/yourpage"
+    linkedin = "https://linkedin.com/in/yourprofile"
+    
+    [params.contact.location]
+      enabled = true
+      address = "123 Main Street, City, Country"
+      latitude = "31.2653"
+      longitude = "32.3019"
+
+# Arabic Translations
+[languages]
+  [languages.ar]
+    languageName = "العربية"
+    weight = 2
+    
+    [languages.ar.params]
+      [languages.ar.params.hero]
+        name = "د. اسمك"
+        tagline = "أخصائي طب الأسنان"
+        graduation = "تخرج 2020 - كلية طب الأسنان"
+        
+        [languages.ar.params.hero.current_position]
+          role = "أخصائي طب الأسنان"
+          clinic = "اسم العيادة"
+      
+      [languages.ar.params.skills]
+        clinical = [
+          "التشخيص الفموي وخطة العلاج",
+          "طب الأسنان الوقائي",
+          "طب الأسنان الترميمي",
+          "علاج الجذور",
+          "التركيبات السنية",
+          "جراحة الفم",
+          "طب أسنان الأطفال",
+          "علاج اللثة",
+          "أساسيات تقويم الأسنان"
+        ]
+        
+        digital = [
+          "التصوير الإشعاعي الرقمي",
+          "طب الأسنان الرقمي",
+          "تصميم الابتسامة الرقمي",
+          "برامج طب الأسنان",
+          "الطباعة ثلاثية الأبعاد"
+        ]
+        
+        soft = [
+          "التواصل مع المرضى",
+          "التعاطف والرحمة",
+          "التعاون الجماعي",
+          "إدارة الوقت",
+          "حل المشكلات",
+          "الاهتمام بالتفاصيل"
+        ]
+      
+      [languages.ar.params.education]
+        university = "اسم الجامعة - كلية طب الأسنان"
+        
+        [languages.ar.params.education.master]
+          title = "ماجستير في طب الفم"
+        
+        [languages.ar.params.education.phd]
+          title = "دكتوراه في علوم الأسنان"
+        
+        [[languages.ar.params.education.timeline]]
+          event = "تخرج من كلية طب الأسنان"
+        
+        [[languages.ar.params.education.timeline]]
+          event = "بدء الممارسة العامة"
+        
+        [[languages.ar.params.education.timeline]]
+          event = "برنامج التدريب المتخصص"
+        
+        [[languages.ar.params.education.timeline]]
+          event = "الوظيفة الحالية"
+        
+        [[languages.ar.params.education.certificates]]
+          title = "دورة علاج الجذور المتقدمة"
+        
+        [[languages.ar.params.education.certificates]]
+          title = "ورشة طب الأسنان الرقمي"
+        
+        [[languages.ar.params.education.certificates]]
+          title = "شهادة زراعة الأسنان"
+      
+      [[languages.ar.params.clinical_cases]]
+        category = "طب الأسنان التجميلي"
+        
+        [[languages.ar.params.clinical_cases.cases]]
+          description = "تجميل الابتسامة بالقشور"
+        
+        [[languages.ar.params.clinical_cases.cases]]
+          description = "علاج تبييض الأسنان"
+      
+      [[languages.ar.params.clinical_cases]]
+        category = "طب الأسنان الترميمي"
+        
+        [[languages.ar.params.clinical_cases.cases]]
+          description = "ترميم التيجان والجسور"
+        
+        [[languages.ar.params.clinical_cases.cases]]
+          description = "إعادة تأهيل الفم الكامل"
+      
+      [[languages.ar.params.clinical_cases]]
+        category = "تقويم الأسنان"
+        
+        [[languages.ar.params.clinical_cases.cases]]
+          description = "علاج التقويم الشفاف"
+      
+      [languages.ar.params.contact.location]
+        address = "123 الشارع الرئيسي، المدينة، البلد"
